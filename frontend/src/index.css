@@ -1,68 +1,72 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html, body {
+  @apply bg-white text-gray-900 font-sans;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  @apply m-0 p-0;
+  font-size: 26px; /* Imposta una dimensione di font base */
+  line-height: 1.5; /* Spaziatura tra le righe */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold leading-tight;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  @apply text-4xl mb-4; /* Dimensione e margine inferiore */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  @apply text-3xl mb-3;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+h3 {
+  @apply text-2xl mb-2;
+}
+
+/* Link principali */
+a {
+  @apply text-primary hover:text-accent underline;
+}
+
+
+/* ------------------ RESPONSIVE LOGO IMAGES ------------------ */
+
+.logo {
+  display: none;
+}
+
+/* Logo per mobile */
+@media (max-width: 600px) {
+  .logo-mobile {
+    display: block;
+    padding: 10px;
   }
-  a:hover {
-    color: #747bff;
+}
+
+/* Logo per tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo-tablet {
+    display: block;
+    padding: 20px;
+    transform: scale(1.4);
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+/* Logo per desktop */
+@media (min-width: 1025px) {
+  .logo-computer {
+    display: block;
+    padding: 20px;
+    margin-left: 20px;
+
   }
 }
