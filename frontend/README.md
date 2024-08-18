@@ -21,4 +21,9 @@ Per avviare il frontend del progetto separatamente dal backend, segui questi pas
    Apri il terminale e clona questo repository in una cartella sul desktop del tuo computer con il seguente comando:
 
    ```bash
-   git clone https://github.com/username/frontend-project.git
+   git clone [https://github.com/username/frontend-project.git](https://github.com/StefanHritcu/OpenSoundHub-Collaborative-Full-Stack-Audio-Processing-Platform.git)
+
+## Apri il terminale in Visual Studio CODE
+   ```bash
+   npm install
+   npm run dev
