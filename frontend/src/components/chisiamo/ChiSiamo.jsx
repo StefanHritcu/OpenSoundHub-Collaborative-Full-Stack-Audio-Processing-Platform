@@ -2,7 +2,7 @@ function ChiSiamo() {
   return (
     <>
       <div>
-        <h1>contatti</h1>
+        <h1>Chi siamo</h1>
       </div>
     </>
   );
