@@ -32,6 +32,7 @@ function DrawerMenu() {
         <hr className="mx-8" />
         <div className="flex flex-col justify-center items-center mt-6">
           <Link
+            onClick={handleHamburgerMenu}
             to="/"
             className="links-style"
             aria-label="Vai alla homepage"
@@ -40,6 +41,7 @@ function DrawerMenu() {
             Home
           </Link>
           <Link
+            onClick={handleHamburgerMenu}
             to="/chisiamo"
             className="links-style"
             aria-label="Vai alla sezione chisiamo"
@@ -48,6 +50,7 @@ function DrawerMenu() {
             ChiSiamo
           </Link>
           <Link
+            onClick={handleHamburgerMenu}
             to="/contatti"
             className="links-style"
             aria-label="Vai alla sezione contatti"

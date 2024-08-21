@@ -11,6 +11,7 @@ body {
   @apply m-0 p-0;
   font-size: 26px; /* Imposta una dimensione di font base */
   line-height: 1.5; /* Spaziatura tra le righe */
+  max-width: 100vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,7 +121,7 @@ a {
 }
 
 .dragger-menu-close {
-  transform: translateX(100%);
+  transform: translateY(-100%);
   right: 0;
 }
 
@@ -145,4 +146,69 @@ a {
       margin-top: 10px;
       margin-bottom: 20px;
     }
+}
+
+
+/* ------------------ FOOTER------------------ */
+.links-footer {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    font-size: 18px;
+  }
+}
+.copyright-div {
+  background-color: #202020;
+}
+
+.designed-by {
+  color: #ffde59;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.single-link-footer {
+  padding: 4px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+@media (min-width: 768px) {
+  .copyright-div {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  .copyright {
+    font-size: 26px;
+  }
+  .designed-by {
+    font-size: 28px;
+  }
+  .single-link-footer {
+    font-size: 30px;
+    padding: 6px;
+  }
+}
+
+.internal-nav-footer {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .internal-nav-footer {
+    display: block;
+    background-color: #303030;
+    margin: -1px;
+    padding: 2px;
+  }
+}
+
+.footer-link-internal-nav {
+  margin-left: 120px;
+  margin-right: 120px;
+  text-decoration: none;
 }
