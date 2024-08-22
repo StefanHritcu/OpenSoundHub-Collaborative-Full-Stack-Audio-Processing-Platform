@@ -55,7 +55,7 @@ function Footer() {
       {/* Sezione link social */}
       <nav
         aria-label="Social media links"
-        className="links-footer flex justify-center space-x-4 py-2"
+        className="links-footer flex justify-center space-x-4 pt-2"
       >
         <a
           className="single-link-footer"
@@ -100,7 +100,7 @@ function Footer() {
         className="internal-nav-footer justify-center py-2"
         aria-label="Footer navigation"
       >
-        <div className="flex justify-around items-center">
+        <div className="flex justify-center items-center">
           <Link to="/" className="footer-link-internal-nav">
             Home
           </Link>

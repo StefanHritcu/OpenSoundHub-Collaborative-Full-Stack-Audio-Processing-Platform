@@ -184,10 +184,10 @@ a {
     padding-top: 16px;
   }
   .copyright {
-    font-size: 26px;
+    font-size: 20px;
   }
   .designed-by {
-    font-size: 28px;
+    font-size: 22px;
   }
   .single-link-footer {
     font-size: 30px;
@@ -201,12 +201,13 @@ a {
 @media (min-width: 1000px) {
   .internal-nav-footer {
     display: block;
-    background-color: #303030;
-    margin: -1px;
+    background-color: #202020;
     padding: 2px;
   }
 }
 
 .footer-link-internal-nav {
   text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }

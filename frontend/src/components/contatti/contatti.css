@@ -33,7 +33,14 @@
 }
 
 
-/* ------------------ STEFANO CONTATTI ------------------ */
+/* ------------------ STEFANO/MICHELE CONTATTI MOBILE ------------------ */
+@media (min-width: 766px) {
+    .profile-main-mobile {
+        display: none;
+    }
+}
+
+
 .img-mobile {
     width: 120px;
     padding: 6px;
@@ -57,4 +64,74 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* ------------------ STEFANO/MICHELE CONTATTI TABLET AND LAPTOP ------------------ */
+.profile-main-tablet-and-laptop {
+    display: none;
+    border-radius: 60px;
+}
+
+@media (min-width: 766px) {
+    .profile-main-tablet-and-laptop {
+        display: block;
+        margin: auto;
+        padding: 60px;
+        margin-top: 40px;
+        margin-left: 60px;
+        margin-right: 60px;
+        width: auto;
+        height: auto;
+        background-color: #303030;
+        margin-bottom: 20px;
+    }
+}
+
+.generalita-tablet-laptop {
+    background-color: white;
+    width: 380px;
+    height: auto;
+    margin-top: 160px;
+    z-index: 100;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.img-tablet-laptop {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: -26px;
+    right: -8px;
+    z-index: 10;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 60px;
+}
+@media (min-width: 1100px) {
+    .generalita-tablet-laptop {
+        width: 700px;
+    }
+}
+@media (min-width: 1200px) {
+    .generalita-tablet-laptop {
+        width: 840px;
+    }
+}
+@media (min-width: 1300px) {
+    .generalita-tablet-laptop {
+        width: 940px;
+    }
+}
+@media (min-width: 1400px) {
+    .generalita-tablet-laptop {
+        width: 1140px;
+    }
+}
+
+.name-tablet-laptop {
+    position: absolute;
+    color: #ffde59;
+    margin-top: 20px;
+
 }

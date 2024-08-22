@@ -10,6 +10,7 @@ export default {
         secondary: "#303030",
         //usato per colore di stile Focus e Hover e piccoli dettagli
         accent: "#00bcd4", // Colore d'accento
+        customGray: "#303030",
       },
 
       //! dimensioni
