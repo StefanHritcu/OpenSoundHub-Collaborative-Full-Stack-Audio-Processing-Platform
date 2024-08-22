@@ -1,0 +1,27 @@
+Ecco i comandi che puoi eseguire nel terminale per installare i pacchetti necessari e avviare il server:
+
+1.	Crea un ambiente virtuale (opzionale ma consigliato):
+
+   python -m venv venv
+   source venv/bin/activate  # Su Windows usa `venv\Scripts\activate`
+
+2.	Installa i pacchetti necessari:
+
+   pip install Flask numpy
+   
+
+3.	Avvia il server:
+
+   python Sinewave\ Generator\ Test.py
+
+
+4.	Accedi all'URL corretto nel tuo browser:
+
+http://127.0.0.1:5000/generate_wave
+
+Dovrebbe scaricarsi un file Wav con la sinuosoide generata
+   
+
+
+
+   

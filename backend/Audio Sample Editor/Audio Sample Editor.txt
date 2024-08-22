@@ -1,0 +1,101 @@
+Assicurati che il server Flask sia in esecuzione prima di inviare le richieste.
+
+- Avviare il Server Flask
+
+Assicurati di essere nella directory del progetto e di avere l'ambiente virtuale attivato. Esegui questi comandi nel terminale:
+1.	Creare e attivare l'ambiente virtuale:
+
+python -m venv venv
+source venv/Scripts/activate  # Su Windows: venv\Scripts\activate
+
+2.	Installare i pacchetti necessari:
+
+pip install Flask pydub
+
+
+3.	Assicurarsi di avere ffmpeg installato:
+•	Scarica ffmpeg dal sito ufficiale: FFmpeg Download
+•	Estrai i file e aggiungi il percorso della cartella bin di ffmpeg alle variabili di ambiente del sistema.
+
+4.	Avviare il server Flask:
+
+python Audio_Sample_Editor.py
+
+- Testare gli Endpoint
+
+Puoi utilizzare curl dal terminale o un client HTTP come Postman per testare gli endpoint.
+
+Importare un File Audio
+
+1.	Comando curl per importare un file audio:
+
+curl -X POST -F 'file=@D:/New sfx/Kick/Kick_2.wav' http://127.0.0.1:5000/import
+
+Risposta attesa:
+
+{
+  "message": "File imported",
+  "file_path": "uploads/Kick_2.wav"
+}
+
+
+Esportare un File Audio con Volume Modificato
+
+2.	Comando curl per esportare un file audio con volume modificato:
+
+curl -X POST -H "Content-Type: application/json" -d '{"file_path": "D:/New sfx/Kick/Kick_2.wav", "volume": 0.5}' http://127.0.0.1:5000/export
+
+Risposta attesa:
+
+{
+  "message": "File exported",
+  "export_path": "uploads/exported_Kick_2.wav"
+}
+
+Cambiare il Volume di un File Audio
+
+3.	Comando curl per cambiare il volume di un file audio:
+
+curl -X POST -H "Content-Type: application/json" -d '{"file_path": "D:/New sfx/Kick/Kick_2.wav", "volume": 0.5}' http://127.0.0.1:5000/volume
+
+Risposta attesa:
+
+{
+  "message": "Volume changed",
+  "file_path": "D:/New sfx/Kick/Kick_2.wav"
+}
+
+Debugging
+Se non vedi i log nel terminale o ricevi errori, verifica quanto segue:
+1.	Il server Flask è in esecuzione?
+•	Assicurati che il server sia avviato e in ascolto sulla porta 5000.
+2.	Gli endpoint sono corretti?
+•	Verifica che gli endpoint /import, /export, e /volume siano definiti correttamente nel file Audio_Sample_Editor.py.
+3.	Il file esiste?
+•	Assicurati che il percorso del file specificato nella richiesta sia corretto e che il file esista.
+4.	Contenuto della richiesta:
+•	Assicurati che il contenuto della richiesta sia nel formato corretto (file per /import, JSON per /export e /volume).
+5.      Dovrai cambiare il percorso di un tuo suono a scelta da selezionare, il mio è D:/New sfx/Kick/Kick_2.wav, viceversa per esportarlo.
+
+Script per Avviare il Backend
+
+@echo off
+REM Creare un ambiente virtuale
+python -m venv venv
+
+REM Attivare l'ambiente virtuale
+call venv\Scripts\activate
+
+REM Installare i pacchetti necessari
+pip install Flask pydub
+
+REM Assicurarsi di avere ffmpeg installato (aggiungi il percorso di ffmpeg alle variabili di ambiente manualmente)
+
+REM Avviare il server Flask
+python Audio_Sample_Editor.py
+pause
+
+
+Nota: Assicurati di cambiare la directory del file audio nei comandi curl con il percorso corretto del file che vuoi utilizzare.
+Puoi eseguire questo script dalla directory del progetto per configurare e avviare il server Flask.
+Se hai ulteriori domande o hai bisogno di assistenza, fammi sapere!

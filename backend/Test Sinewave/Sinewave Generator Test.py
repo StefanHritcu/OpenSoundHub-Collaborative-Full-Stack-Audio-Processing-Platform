@@ -30,7 +30,8 @@ def generate_wave():
         wf.writeframes((wave_data * 32767).astype(np.int16).tobytes())
 
     byte_io.seek(0)
-    return send_file(byte_io, mimetype='audio/wav', as_attachment=True, attachment_filename='sinewave.wav')
+    return send_file(byte_io, mimetype='audio/wav', as_attachment=True, download_name='sinewave.wav')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
