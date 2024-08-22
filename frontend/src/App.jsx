@@ -21,8 +21,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/chisiamo" element={<ChiSiamo />} />
           <Route path="/contatti" element={<Contatti />} />
-          <Route path="/stefan" element={<Stefan />} />
-          <Route path="/michele" element={<Michele />} />
+          <Route path="contatti/stefan" element={<Stefan />} />
+          <Route path="contatti/michele" element={<Michele />} />
         </Routes>
       </main>
 

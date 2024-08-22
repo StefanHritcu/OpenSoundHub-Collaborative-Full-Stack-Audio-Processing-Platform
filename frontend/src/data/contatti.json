@@ -1,18 +1,22 @@
 [
   {
     "name": "Stefan Hritcu",
-    "description": "Stefan Hritcu è un aspirante sviluppatore frontend con una forte dedizione all'autoapprendimento e una passione per la programmazione. Negli ultimi 10 mesi, ha intrapreso un percorso di formazione autonomo, sviluppando una solida competenza nelle tecnologie frontend, tra cui React, HTML, CSS, Bootstrap, Tailwind, Sass, JavaScript e TypeScript. Stefan ha acquisito familiarità con Git e GitHub, strumenti essenziali per la gestione del codice e la collaborazione in team. Durante questo periodo, ha messo in pratica le sue conoscenze attraverso vari progetti personali, tra cui lo sviluppo di siti web completi utilizzando lo stack MERN (MongoDB, Express, React, Node.js). Grazie a questa esperienza, ha ampliato le sue competenze anche nel backend e nella gestione di database, dimostrando una comprensione a tutto tondo del ciclo di vita dello sviluppo web. Stefan ha partecipato attivamente a progetti collaborativi, contribuendo con le sue competenze tecniche e il suo spirito di squadra. La sua capacità di affrontare nuove sfide e imparare rapidamente lo rende un professionista promettente e motivato nel mondo della programmazione frontend.",
+    "description": "Stefan Hritcu è un aspirante sviluppatore frontend con una forte passione per la programmazione. Negli ultimi 10 mesi, ha acquisito competenze in React, HTML, CSS, JavaScript, TypeScript e altre tecnologie. Ha realizzato progetti personali con lo stack MERN, acquisendo anche conoscenze di backend e database. È rapido nell'apprendimento, motivato e ha una solida comprensione dello sviluppo web.",
+    "mansione": "Frontend",
     "email": "stefano.94h@gmail.com",
-    "skills": ["HTML", "CSS", "TailwindCSS", "Bootstrap", "SASS", "Javascipt", "TypeScript", "React", "Angular", "NodeJS", "ExpressJS", "MongoDB", "Git"],
-    "github": "https://johndoe.com",
+    "skills1": ["HTML", "CSS/SASS", "TailwindCSS", "Bootstrap", "Git", "NodeJS"],
+    "skills2": ["Javascipt", "TypeScript", "React", "Angular", "ExpressJS", "MongoDB"],
+    "github": "https://github.com/StefanHritcu",
     "linkedin": "https://www.linkedin.com/in/stefan-florian-hritcu-ba615431b/"
   },
   {
     "name": "Michele Grimaldi",
     "description": "Sono un Programmatore Audio e Sound Designer Tecnico specializzato in videogiochi. Ho una certificazione in Informatica e sono competente in diversi linguaggi di programmazione, tra cui C++, C#, Python, Lua, Rust e SQL. Utilizzo il framework JUCE per lo sviluppo di applicazioni audio, VST, plugin e altro ancora.",
+    "mansione": "Backend",
     "email": "mikgrimaldi7@gmail.com",
+    "skills1": ["C++", "C#", "Python"],
+    "skills2": ["Lua", "Rust", "SQL"],
     "github": "https://github.com/MikyMikeMusic/MikyMikeMusic",
-    "linkedin": "https://www.linkedin.com/in/michele-grimaldi-599b36280/",
-    "skills": ["C++", "C#", "Python", "Lua", "Rust", "SQL"]
+    "linkedin": "https://www.linkedin.com/in/michele-grimaldi-599b36280/"
   }
 ]

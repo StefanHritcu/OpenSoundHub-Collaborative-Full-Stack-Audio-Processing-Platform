@@ -33,17 +33,28 @@
 }
 
 
-
-@media (max-width: 600px) {
-    .contact-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* ------------------ STEFANO CONTATTI ------------------ */
+.img-mobile {
+    width: 120px;
+    padding: 6px;
+}
+.mansione {
+    background-color: #303030;
+    color: white;
+}
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.image-card {
-    width: 176px;
-    height: auto;
+.skills-section {
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
