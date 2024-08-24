@@ -1,0 +1,94 @@
+.chisiamo-foto1 {
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+@media(min-width: 1000px) {
+    .chisiamo-foto1 {
+        width: 460px;
+    }
+    .chisiamo-responsive-first-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chisiamo-responsive-second-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .chisiamo-foto1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .documentation-style {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 60px;
+
+    }
+}
+
+.second-title-underline {
+    border-bottom: solid 4px red;
+}
+
+.chisiamo-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 6px;
+    background-color: rgb(78, 76, 76); /* Colore di sfondo di base */
+    background-image:
+        /* Gradiente angolare per creare striature */
+        linear-gradient(25deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%),
+        /* Gradiente radiale per effetti più sfumati */
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.15), transparent 35%);
+    background-size: 100% 100%; /* Imposta la dimensione dell'effetto */
+    background-blend-mode: overlay; /* Sovrappone i gradienti */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px;
+}
+
+.chisiamo-second-title {
+    text-align: center;
+    font-size: 24px; /* Leggermente più grande per una migliore visibilità */
+    letter-spacing: 1px; /* Mantiene lo spazio tra le lettere */
+    font-weight: bold; /* Rende il testo più marcato */
+    color: #ffde59; /* Cambia il colore per un contrasto accattivante */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo per maggiore impatto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra per profondità */
+    background: linear-gradient(to bottom, #423915, #050505); /* Gradiente del testo */
+    -webkit-background-clip: text; /* Mostra il gradiente solo nel testo */
+    color: transparent; /* Rende il colore del testo trasparente per visualizzare il gradiente */
+    padding: 10px;
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+.chisiamo-terzo-title {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.chisiamo-iniziasubito {
+    background-color: #ffde59;
+    color: #303030;
+    font-size: 40px;
+    margin: auto;
+    width: 260px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 26px;
+    padding: 10px;
+    cursor: pointer;
+}
