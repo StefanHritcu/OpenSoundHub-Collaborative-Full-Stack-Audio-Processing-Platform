@@ -8,7 +8,7 @@ import Contatti from "./components/contatti/Contatti";
 import Stefan from "./components/contatti/Stefan";
 import Michele from "./components/contatti/Michele";
 import Footer from "./components/footer/Footer";
-import GenerateAudio from "./components/funzionalità/GenerateAudio";
+import AudioManagerr from "./components/funzionalità/audioManager/AudioManager";
 
 function App() {
   return (
@@ -24,8 +24,7 @@ function App() {
           <Route path="/contatti" element={<Contatti />} />
           <Route path="contatti/stefan" element={<Stefan />} />
           <Route path="contatti/michele" element={<Michele />} />
-
-          <Route path="/generateaudio" element={<GenerateAudio />} />
+          <Route path="audiomanager" element={<AudioManagerr />} />
         </Routes>
       </main>
 
